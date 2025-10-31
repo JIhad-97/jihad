@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Left-Aligned Top Bar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+    h1{
+      font-family: Trattatello;
+      font-size: 50px;
+      margin-left: 20px;
+    }
+
+    .mynamepic{
+      width: 350px;
+      height: auto;
+      margin-top: 200px;
+    }
+
+    .myfacepic{
+      width: 600px;
+      height: auto;
+      float: right;
+      margin-top: -300px;
+
+    }
+
+    p{
+      max-width: 40%;
+    }
+
+    /* Top Bar Container */
+    .topbar {
+      background-color: #363434;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 20px 20px;
+      font-size: 20px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* Logo / Left Side */
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-right: 30px;
+    }
+
+    /* Navigation Links */
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #00bfff;
+    }
+
+    /* Responsive (mobile) */
+    @media (max-width: 600px) {
+      .nav-links {
+        display: none;
+      }
+    }
+
+    /* Add spacing below the fixed bar */
+    .content {
+      padding-top: 60px;
+      margin-left: 5px;
+    }
+
+
+/* ----- BOTTOM BAR ----- */
+.bottombar {
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+.contact-info,
+.social-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.bottombar a {
+  color: #00bfff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.bottombar a:hover {
+  color: white;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+
+  .bottombar {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="nav-links">
+      <a href="#resume">Resume</a>
+      <a href="#freelance">Freelance Rate</a>
+      <a href="#art">Art</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <img class="mynamepic" src="my name 2.PNG">
+    
+    <p>A computer science graduate looking to expand his knowledge professionally and flex my artistic muscles with graphics design or video editing</p>
+  </div>
+
+  <div>
+    <img class="myfacepic" src="my pic.png"  >
+  </div>
+
+  <div class="bottombar">
+    <div class="contact-info">
+      <span>Email: <a href="jihad0172427@gmail.com">jihad0172427@gmail.com</a></span>
+      <span>Phone: <a href="tel:+60172427489">+60 17 242 7489</a></span>
+  </div>
+
+</body>
+</html>
