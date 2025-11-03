@@ -11,11 +11,16 @@
       background-color: black;
       color: white;
       padding-bottom: 50px;
+      padding-top: 50px;
     }
     h1{
-      font-family: Trattatello;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 50px;
-      margin-left: 20px;
+      text-align: center;
+    }
+
+    .second-table{
+        margin-top: 100px;
     }
 
     .mynamepic{
@@ -32,9 +37,47 @@
 
     }
 
-    p{
-      max-width: 40%;
+    p, h3{
+        text-align: left;
+        margin-left: 150px;
     }
+        hr{
+        border: none;
+        border-top: 2px solid #ccc;
+        margin: 20px auto;
+        width: 80%; 
+    }
+
+    .row-border-table {
+  border-collapse: collapse;   /* removes double borders */
+  width: 80%;
+  margin: 20px auto;           /* centers the table */
+  font-family: Arial, sans-serif;
+}
+
+/* Remove all borders first */
+.row-border-table th,
+.row-border-table td {
+  border: none;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+/* Add only horizontal (row) borders */
+.row-border-table tr {
+  border-bottom: 1px solid #ccc; /* horizontal lines only */
+}
+
+/* Optional: remove last line if you want */
+.row-border-table tr:last-child {
+  border-bottom: none;
+}
+
+/* Optional: header styling */
+.row-border-table th {
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
 
     
     .topbar {
@@ -147,13 +190,76 @@
   </div>
 
   <div class="content">
-    <img class="mynamepic" src="My name 3.png">
-    
-    <p>A computer science graduate looking to expand his knowledge professionally and flex my artistic muscles with graphics design or video editing. </p>
-  </div>
+    <h1>Freelance Rates</h1>
+    <h3>Web Design</h3>
+    <p>These are the rates I offer to redesign a user interface of a given website</p>
+    <table class="row-border-table">
+  <thead>
+    <tr>
+      <th>No. of pages</th>
+      <th>Duration</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>3 days</td>
+      <td>$25</td>
+    </tr>
+    <tr>
+      <td>2 or 3</td>
+      <td>1 week</td>
+      <td>$50</td>
+    </tr>
+    <tr>
+      <td>4 to 6</td>
+      <td>2 weeks</td>
+      <td>$75</td>
+    </tr>
+    <tr>
+        <td>7 or more</td>
+        <td>TBD</td>
+        <td>TBD</td>
+    </tr>
+  </tbody>
+</table>
+ 
+<div class="second-table">
+    <p>These are the rates I offer to create a user interface of a website</p>
+    <table class="row-border-table">
+  <thead>
+    <tr>
+      <th>No. of pages</th>
+      <th>Duration</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>5 days</td>
+      <td>$40</td>
+    </tr>
+    <tr>
+      <td>2 or 3</td>
+      <td>10 days</td>
+      <td>$70</td>
+    </tr>
+    <tr>
+      <td>4 to 6</td>
+      <td>2 weeks</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+        <td>7 or more</td>
+        <td>TBD</td>
+        <td>TBD</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-  <div>
-    <img class="myfacepic" src="my pic.png"  >
   </div>
 
   <div class="bottombar">
